@@ -37,7 +37,6 @@ var addmarkboxesCmd = &cobra.Command{
 in the input pdf, flattening the original pages to images so that
 annotations can't be modified by the marker`,
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("addmarkboxes called")
 
 		if len(os.Args) < 2 {
 			fmt.Printf("Requires one argument: input_path\n")
