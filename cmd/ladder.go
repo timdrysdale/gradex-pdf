@@ -48,15 +48,15 @@ func getTextFieldsActionBar(pageNum int, verb string) []TextField {
 		fields = append(fields, field)
 	}
 
-	qbox2 := getTextFieldsQ()
+	/*qbox2 := getTextFieldsQ()
 	qbox2 = displaceTextFields(qbox1, 1.7*mm, 137.1*mm)
 
 	for _, field := range qbox2 {
 		field.ID = fmt.Sprintf("page-%03d-Q2-%s-%s", pageNum, verb, field.ID)
 		fields = append(fields, field)
-	}
+	}*/
 
-	fields = append(fields, TextField{ID: "taskOK", Bound: Box{TopLeft: Point{X: 19.8 * mm, Y: 286.4 * mm}, Width: 8 * mm, Height: 8 * mm}})
+	//fields = append(fields, TextField{ID: "taskOK", Bound: Box{TopLeft: Point{X: 19.8 * mm, Y: 286.4 * mm}, Width: 8 * mm, Height: 8 * mm}})
 
 	return fields
 }
